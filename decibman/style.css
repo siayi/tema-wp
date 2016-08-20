@@ -96,11 +96,11 @@ footer#footer .colophon a.back-to-top {
     background-image: none;
   }
 }
-
+/***
 .social-block a { 
-  color: #FFF;
+  color: #000;
 }
-
+***/
 .tc-header .brand a, .tc-header .brand h1 {
   display: inline;
   margin: 10px;
