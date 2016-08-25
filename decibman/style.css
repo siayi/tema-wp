@@ -734,6 +734,7 @@ img.v-centered {
 
 /* akhir image grayscale */
 
+/* awal my-product-grid */
 .my-product-grid [class*="span"] {
   background-color: #eee;
   text-align: center;
@@ -757,6 +758,43 @@ img.v-centered {
   font-size: 1.3em;
   line-height: 2em;
 }
+/* akhir my-product-grid */
 
+/* awal my-product-grid */
+
+.my-sponsor-grid [class*="span"] {
+  background-color: #eee;
+  text-align: center;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  min-height: 20px;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.my-sponsor-grid [class*="span"]:hover {
+  background-color: #ddd;
+}
+
+.my-sponsor-grid [class*="span"] [class*="span"] {
+  background-color: #ccc;
+}
+.my-sponsor-title {
+	/**
+  font-weight: 500;
+  font-size: 1.3em;
+  **/
+  line-height: 2em;
+  display: block;
+  background-color: #eee;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+	  border: 2px solid #ccc;
+}
+/* akhir my-product-grid */
 
 

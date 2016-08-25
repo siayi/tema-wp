@@ -1,3 +1,40 @@
 .single-tribe_events .tribe-events-event-meta {
     background: #fff;
 }
+.tribe-events-calendar thead th {
+	color: #5a5a5a;
+}
+.tribe-events-list-separator-month {
+	font-size: 24px;
+	margin: 1.25em auto;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	background-color: transparent;
+}
+
+
+.tribe-events-list-separator-month:after {
+	content: '';
+	border-bottom: 1px solid #c2c2c2;
+	height: 1px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+}
+
+.tribe-events-list-separator-month span {
+	background-color: #fff;
+	padding: 0 7.5%;
+}
+
+.tribe-events-list-separator-month + .type-tribe_events.tribe-events-first {
+	padding-top: 1.5em;
+}
+
+.tribe-events-list .type-tribe_events.tribe-event-end-month {
+	padding-bottom: 1.5em;
+}
