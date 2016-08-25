@@ -18,9 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 <ul class="tribe-events-sub-nav">
 
 	<!-- Previous Page Navigation -->
-	<li class="tribe-events-nav-previous" aria-label="previous day link"><?php tribe_the_day_link( 'previous day' ) ?></li>
+	<li class="tribe-events-nav-previous" aria-label="previous day link"><?php tribe_the_day_link( 'hari sebelumnya' ) ?></li>
 
 	<!-- Next Page Navigation -->
-	<li class="tribe-events-nav-next" aria-label="next day link"><?php tribe_the_day_link( 'next day' ) ?></li>
+	<li class="tribe-events-nav-next" aria-label="next day link"><?php tribe_the_day_link( 'hari berikutnya' ) ?></li>
 
 </ul>
