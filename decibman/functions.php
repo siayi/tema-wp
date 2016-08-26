@@ -51,27 +51,20 @@ function decibman_add_events_subscribe() {
   //class
   ob_start();
 ?>
-<!--
   <div class="social-block span6">
     <?php if ( 0 != tc__f( '__get_option', 'tc_social_in_header') ) : ?>
       <?php echo tc__f( '__get_socials' ) ?>
-	  -->
         <!-- Begin MailChimp Signup Form -->
-<!--
-        <form action="//sfk9.us12.list-manage.com/subscribe/post?u=d95a16f47be2acdbbff34e7f8&amp;id=9bb630e658" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email to join the pack!" required>
--->
+        <form action="//desa.us13.list-manage.com/subscribe/post?u=c3143f6e9d065867b372eb0b0&amp;id=4d5d792ad8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Input email untuk bergabung dengan kami" required>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-<!--
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d95a16f47be2acdbbff34e7f8_9bb630e658" tabindex="-1" value=""></div>
-          <input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="button" style>
-        </form>
--->        
+          <input type="submit" value="Bergabung" name="subscribe" id="mc-embedded-subscribe" class="button" style>
+        </form>     
         <!--End mc_embed_signup-->
-<!--
+
       <?php endif; ?>
-  </div>
--->
+</div>
 <?php
   $html = ob_get_contents();
   ob_end_clean();
