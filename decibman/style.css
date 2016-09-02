@@ -899,7 +899,7 @@ background-color: #000000;
 }
 /* END OF Change Decibman Background to Texture or Image  */
 
-/* START OF Change Customizr Background to Texture or Image  */
+/* START OF Change Decibman Background to Texture or Image  */
 body {
  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
   background: -webkit-linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
@@ -908,8 +908,8 @@ body {
 #main-wrapper {
 background:     #FAFAFA;
 }
-/* END OF Change Customizr Background to Texture or Image  */
-/* START OF Change Customizr Background to Texture or Image  */
+/* END OF Change Decibman Background to Texture or Image  */
+/* START OF Change Decibman Background to Texture or Image  */
 header.tc-header {
   background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
   background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgb(0, 0, 0));
