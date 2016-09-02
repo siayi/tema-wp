@@ -206,7 +206,8 @@ footer#footer .colophon a.back-to-top {
 }
 
 .sticky-enabled .tc-header {
-  background-color: rgba(0,0,0,.8);
+  background: linear-gradient(90deg, rgba(0, 0, 0,,.8), rgba(203, 69, 57,.8));
+  background: -webkit-linear-gradient(90deg, rgba(203, 69, 57,.8), rgba(0, 0, 0,.8));
 }
 
 .navbar .nav>li>a {
@@ -891,4 +892,25 @@ img.v-centered {
 }
 /* akhir my-product-grid */
 
+/* START OF Change Decibman Background to Texture or Image  */
+/* Set the color (red) of the body, wrapper, header & footer */
+body, #main-wrapper, header.tc-header, footer#footer .colophon {
+background-color: #000000;
+}
+/* END OF Change Decibman Background to Texture or Image  */
 
+/* START OF Change Customizr Background to Texture or Image  */
+body {
+ background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
+  background: -webkit-linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
+}
+/* Set the color (#FAFAFA) of the internal wrapper */
+#main-wrapper {
+background:     #FAFAFA;
+}
+/* END OF Change Customizr Background to Texture or Image  */
+/* START OF Change Customizr Background to Texture or Image  */
+header.tc-header {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
+  background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgb(0, 0, 0));
+}
