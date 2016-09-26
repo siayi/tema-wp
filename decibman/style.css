@@ -206,8 +206,8 @@ footer#footer .colophon a.back-to-top {
 }
 
 .sticky-enabled .tc-header {
-  background: linear-gradient(90deg, rgba(0, 0, 0,,.8), rgba(203, 69, 57,.8));
-  background: -webkit-linear-gradient(90deg, rgba(203, 69, 57,.8), rgba(0, 0, 0,.8));
+  background: linear-gradient(90deg, rgba(0, 0, 0,.9), rgba(203, 69, 57,.5));
+  background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgba(0, 0, 0,.9));
 }
 
 .navbar .nav>li>a {
@@ -916,8 +916,9 @@ header.tc-header {
 }
 
 /* START */
+/*
 #tc-page-wrap{
-background: #FAFAFA /* url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAAAAAAAAU4/vKm0Ye_MJCYsezkYMNGF9poMb8MQ4dnxQCLcB/s1600/2016001bgc.jpg) no-repeat right top fixed*/;  
-} 
+background: #FAFAFA url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAAAAAAAAU4/vKm0Ye_MJCYsezkYMNGF9poMb8MQ4dnxQCLcB/s1600/2016001bgc.jpg) no-repeat right top fixed;  
+} */
 /*END */
 

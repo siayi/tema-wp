@@ -75,3 +75,9 @@ function decibman_tc_tagline_class($string) {
     return 'span6';
 }
 add_filter( 'tc_tagline_class', 'decibman_tc_tagline_class', 10, 1 );
+// START Limit The Excerpt’s Word Count to 10 words 
+add_filter('excerpt_length', 'ilc_excerpt_length');
+function ilc_excerpt_length( $length ){
+  return 10;
+}
+// END
