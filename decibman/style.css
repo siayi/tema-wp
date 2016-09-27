@@ -119,10 +119,11 @@ Author URI:http://www.facebook.com/Desa.Ciburial/
 }
 }
 #mc_embed_signup{
-	background:#fff; 
+	background:#EB7260; 
 	clear:left; 
-	font:14px Helvetica,Arial,sans-serif; 
+	font:16px Arial,sans-serif; 
 	width:100%;
+	color: white;
 }
 
 .tc-header {
@@ -138,9 +139,15 @@ Author URI:http://www.facebook.com/Desa.Ciburial/
   margin: 0px 0px 20px 0px;
 }
 
-footer#footer,
+footer#footer {
+border-top: 10px solid #FFCA4F;
+background: #292F33;
+}
+.colophon{
+border-top: 5px solid #B05648;
+}
 footer#footer .colophon {
-  background-color: #000;
+  background-color: #354458;
   color: #FFF;
 }
 footer#footer .colophon .social-block a { 
@@ -204,12 +211,6 @@ footer#footer .colophon a.back-to-top {
     -1px 1px 0 #000,
      1px 1px 0 #000;
 }
-
-.sticky-enabled .tc-header {
-  background: linear-gradient(90deg, rgba(0, 0, 0,.9), rgba(203, 69, 57,.5));
-  background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgba(0, 0, 0,.9));
-}
-
 .navbar .nav>li>a {
   text-shadow: none;
   color: white;
@@ -894,31 +895,50 @@ img.v-centered {
 
 /* START OF Change Decibman Background to Texture or Image  */
 /* Set the color (red) of the body, wrapper, header & footer */
-body, #main-wrapper, header.tc-header, footer#footer .colophon {
-background-color: #000000;
+body, #main-wrapper, header.tc-header {
+background-color: #E9E0D6;
 }
+
 /* END OF Change Decibman Background to Texture or Image  */
 
 /* START OF Change Decibman Background to Texture or Image  */
+/**
 body {
+	
  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
   background: -webkit-linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
 }
+**/
 /* Set the color (#FAFAFA) of the internal wrapper */
+
 #main-wrapper {
-background:     #FAFAFA;
+background:     #E9E0D6;
 }
 /* END OF Change Decibman Background to Texture or Image  */
 /* START OF Change Decibman Background to Texture or Image  */
+
 header.tc-header {
+background: #7FCDC8
+/**
   background: linear-gradient(90deg, rgb(0, 0, 0), rgb(203, 69, 57));
   background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgb(0, 0, 0));
+  **/
+}
+
+.sticky-enabled .tc-header {
+background:#1F807B
+/**
+  background: linear-gradient(90deg, rgba(0, 0, 0,.9), rgba(203, 69, 57,.5));
+  background: -webkit-linear-gradient(90deg, rgb(203, 69, 57), rgba(0, 0, 0,.9));
+**/
 }
 
 /* START */
 
 #tc-page-wrap{
-background: #FAFAFA /*url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAAAAAAAAU4/vKm0Ye_MJCYsezkYMNGF9poMb8MQ4dnxQCLcB/s1600/2016001bgc.jpg) */no-repeat right top fixed;  
+background: #E9E0D6 /*url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAAAAAAAAU4/vKm0Ye_MJCYsezkYMNGF9poMb8MQ4dnxQCLcB/s1600/2016001bgc.jpg) */no-repeat right top fixed;  
 }
 /*END */
-
+.round-div {
+border: 104px solid #E9E0D6;
+}

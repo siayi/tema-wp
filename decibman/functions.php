@@ -81,3 +81,29 @@ function ilc_excerpt_length( $length ){
   return 10;
 }
 // END
+// START Move Post Meta before Title
+add_action ('__before_body' , 'move_single_post_metas');
+
+function move_single_post_metas() {
+  //checks if we are displaying a single post. Returns false if not.
+  if ( ! is_single() )
+    return;
+  remove_action  ( '__after_content_title' , array( TC_post_metas::$instance , 'tc_set_post_metas_hooks' ), 20);
+  add_action ('__before_content_title' , array( TC_post_metas::$instance , 'tc_set_post_metas_hooks'), 10);
+ }
+ //END 
+//START Change title of time-based archives
+add_filter('tc_time_archive_header_content','my_time_archive_header_content');
+function my_time_archive_header_content($content) {
+
+   if ( is_day() || is_month() || is_year() ) {
+       $archive_type   = is_day() ? sprintf( __( 'Arsip Harian: %s' , 'customizr' ), '<span>' . get_the_date() . '</span>' ) : __( 'Archives' , 'customizr' );
+       $archive_type   = is_month() ? sprintf( __( 'Arsip Bulanan: %s' , 'customizr' ), '<span>' . get_the_date( _x( 'F Y' , 'monthly archives date format' , 'customizr' ) ) . '</span>' ) : $archive_type;
+       $archive_type   = is_year() ? sprintf( __( 'Arsip Tahunan: %s' , 'customizr' ), '<span>' . get_the_date( _x( 'Y' , 'yearly archives date format' , 'customizr' ) ) . '</span>' ) : $archive_type;
+       $content        = sprintf('<h1 class="%1$s">%2$s</h1>',
+           apply_filters( 'tc_archive_icon', 'format-icon' ), $archive_type
+           );
+    }
+    return $content;
+}
+//END
