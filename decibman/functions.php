@@ -26,7 +26,8 @@ function my_custom_credits(){
  echo '<div class="span4 credits">
     		    	<p> &middot; <span class="copy-left">©</span> 2009 -'.esc_attr( date( 'Y' ) ).' <a href="'.esc_url( home_url() ).'" title="'.esc_attr(get_bloginfo()).'" rel="bookmark">'.esc_attr(get_bloginfo()).'</a> &middot; Designed by <a href="https://twitter.com/siayi" target="_blank">@siayi</a> &middot;</p></div>';
 }
-//
+//START DECIBMAN_ADD-SUBMENU
+/**
 add_action('__before_main_container' , 'decibman_add_submenu');
 
 function decibman_add_submenu() {
@@ -45,7 +46,8 @@ function decibman_add_submenu() {
     echo '</ul>';
   }
 }
-//
+*/
+//END DECIBMAN_ADD-SUBMENU
 add_filter ( 'tc_social_in_header' , 'decibman_add_events_subscribe' );
 function decibman_add_events_subscribe() {
   //class
@@ -107,3 +109,15 @@ function my_time_archive_header_content($content) {
     return $content;
 }
 //END
+//START Customize page 404
+
+add_filter('tc_404_content', 'my_404_content');
+add_filter('tc_no_result_content', 'my_404_content');
+function my_404_content(){
+    $image_url = 'https://4.bp.blogspot.com/-GpTGNRTLyYc/V-uLwkjRxLI/AAAAAAAAH5E/SaNCLOvS6q8OkdYRc5NWTbY9QlDTk1LLQCLcB/s1600/404-not-found-ciburial-compressor.png';
+    return sprintf('<img alt="Not Found" class="grayscale" src="%1s">%2$s',
+        $image_url,
+		get_search_form( $echo=false)
+    );
+}
+//END 
