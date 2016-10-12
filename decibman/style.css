@@ -942,3 +942,12 @@ background: #E9E0D6 /*url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAA
 .round-div {
 border: 104px solid #E9E0D6;
 }
+/* START */
+.widget-front .round-div {
+    width: 150px;
+    height: 150px;
+    border: 94px solid #E9E0D6;
+    top: -44px;
+    left: -65px;
+}
+/*END*/
