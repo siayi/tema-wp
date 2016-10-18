@@ -939,15 +939,6 @@ background:#1F807B
 background: #E9E0D6 /*url(https://4.bp.blogspot.com/-PDocKfBMdIQ/V86CQLtXtrI/AAAAAAAAAU4/vKm0Ye_MJCYsezkYMNGF9poMb8MQ4dnxQCLcB/s1600/2016001bgc.jpg) */no-repeat right top fixed;  
 }
 /*END */
-.round-div {
-border: 104px solid #E9E0D6;
-}
-/* START */
 .widget-front .round-div {
-    width: 150px;
-    height: 150px;
-    border: 94px solid #E9E0D6;
-    top: -44px;
-    left: -65px;
+border: 96px solid #E9E0D6;
 }
-/*END*/

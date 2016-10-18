@@ -48,6 +48,7 @@ function decibman_add_submenu() {
 }
 */
 //END DECIBMAN_ADD-SUBMENU
+
 add_filter ( 'tc_social_in_header' , 'decibman_add_events_subscribe' );
 function decibman_add_events_subscribe() {
   //class
@@ -67,6 +68,7 @@ function decibman_add_events_subscribe() {
 
       <?php endif; ?>
 </div>
+
 <?php
   $html = ob_get_contents();
   ob_end_clean();
@@ -77,12 +79,14 @@ function decibman_tc_tagline_class($string) {
     return 'span6';
 }
 add_filter( 'tc_tagline_class', 'decibman_tc_tagline_class', 10, 1 );
+
 // START Limit The Excerpt’s Word Count to 10 words 
 add_filter('excerpt_length', 'ilc_excerpt_length');
 function ilc_excerpt_length( $length ){
   return 10;
 }
 // END
+
 // START Move Post Meta before Title
 add_action ('__before_body' , 'move_single_post_metas');
 
@@ -90,10 +94,11 @@ function move_single_post_metas() {
   //checks if we are displaying a single post. Returns false if not.
   if ( ! is_single() )
     return;
-  remove_action  ( '__after_content_title' , array( TC_post_metas::$instance , 'tc_set_post_metas_hooks' ), 20);
-  add_action ('__before_content_title' , array( TC_post_metas::$instance , 'tc_set_post_metas_hooks'), 10);
+  remove_action  ( '__after_content_title' , array( CZR_post_metas::$instance , 'czr_fn_set_post_metas_hooks' ), 20);
+  add_action ('__before_content_title' , array( CZR_post_metas::$instance , 'czr_fn_set_post_metas_hooks'), 10);
  }
  //END 
+
 //START Change title of time-based archives
 add_filter('tc_time_archive_header_content','my_time_archive_header_content');
 function my_time_archive_header_content($content) {
@@ -110,7 +115,6 @@ function my_time_archive_header_content($content) {
 }
 //END
 //START Customize page 404
-
 add_filter('tc_404_content', 'my_404_content');
 add_filter('tc_no_result_content', 'my_404_content');
 function my_404_content(){
