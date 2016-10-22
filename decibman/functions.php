@@ -142,3 +142,21 @@ function my_analytics() {
 <?php
 }
 //END GOOGLE ANALYTICS TRACKING CODE
+//START
+add_action('__after_content' , 'display_leaderboard');
+function display_leaderboard() { 
+?>
+<center> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ciburial-img-only-728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9795094804647022"
+     data-ad-slot="5199537792"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center> 
+<?php 
+}
+//END
