@@ -160,3 +160,34 @@ function display_leaderboard() {
 <?php 
 }
 //END
+//START SEARCH
+add_action('__after_header', 'ayi_search_form');
+function ayi_search_form(){
+    $search_form = '<div class="row-fluid"><div class="my-search-box span12">' . get_search_form(false) . '</div></div>';
+    echo $search_form;
+}
+//END SEARCH
+/**
+//START
+// As of 3.1.10, Customizr doesn't output an html5 form.
+add_theme_support( 'html5', array( 'search-form' ) );
+add_filter('wp_nav_menu_items', 'add_search_form_to_menu', 10, 2);
+function add_search_form_to_menu($items, $args) {
+  // If this isn't the main navbar menu, do nothing
+  if( !($args->theme_location == 'main') ) // with Customizr Pro 1.2+ and Cusomizr 3.4+ you can chose to display the saerch box to the secondary menu, just replacing 'main' with 'secondary'
+    return $items;
+  // On main menu: put styling around search and append it to the menu items
+  return $items . '<li class="my-nav-menu-search">' . get_search_form(false) . '</li>';
+}
+//END
+**/
+//START
+add_filter('wp_nav_menu_items', 'add_google_custom_search', 10, 2);
+function add_google_custom_search($items, $args) {
+
+  if( !($args->theme_location == 'main') )
+    return $items;
+
+  return $items . '<li class="my-nav-menu-search">CUSTOMSEARCH</li>';
+}
+//END
