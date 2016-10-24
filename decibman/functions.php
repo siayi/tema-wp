@@ -177,3 +177,9 @@ function add_google_custom_search($items, $args) {
   return $items . '<li class="my-nav-menu-search">CUSTOMSEARCH</li>';
 }
 //END
+//START Disabling Front End CSS Loading Simple WordPress Download Monitor Plugin
+add_action( 'wp_print_styles', 'my_custom_deregister_styles', 100 );
+function my_custom_deregister_styles() {
+    wp_deregister_style( 'dlm-frontend' );
+}
+//END 
