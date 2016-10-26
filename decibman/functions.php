@@ -167,16 +167,6 @@ function ayi_search_form(){
     echo $search_form;
 }
 //END SEARCH
-//START
-add_filter('wp_nav_menu_items', 'add_google_custom_search', 10, 2);
-function add_google_custom_search($items, $args) {
-
-  if( !($args->theme_location == 'main') )
-    return $items;
-
-  return $items . '<li class="my-nav-menu-search">CUSTOMSEARCH</li>';
-}
-//END
 //START Disabling Front End CSS Loading Simple WordPress Download Monitor Plugin
 add_action( 'wp_print_styles', 'my_custom_deregister_styles', 100 );
 function my_custom_deregister_styles() {
