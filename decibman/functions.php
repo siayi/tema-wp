@@ -143,6 +143,7 @@ function my_analytics() {
 }
 //END GOOGLE ANALYTICS TRACKING CODE
 //START
+/*
 add_action('__after_content' , 'display_leaderboard');
 function display_leaderboard() { 
 ?>
@@ -159,17 +160,5 @@ function display_leaderboard() {
 </center> 
 <?php 
 }
+*/
 //END
-//START SEARCH
-add_action('__after_header', 'ayi_search_form');
-function ayi_search_form(){
-    $search_form = '<div class="row-fluid"><div class="my-search-box span12">' . get_search_form(false) . '</div></div>';
-    echo $search_form;
-}
-//END SEARCH
-//START Disabling Front End CSS Loading Simple WordPress Download Monitor Plugin
-add_action( 'wp_print_styles', 'my_custom_deregister_styles', 100 );
-function my_custom_deregister_styles() {
-    wp_deregister_style( 'dlm-frontend' );
-}
-//END 
